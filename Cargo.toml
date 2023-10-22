@@ -1,0 +1,15 @@
+[package]
+name = "ddkdk"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "ddkdk"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module"] }
+numpy = "0.20"
+ndarray-rand = "0.14.0"
+ndarray-linalg = { version = "0.16.0" }
